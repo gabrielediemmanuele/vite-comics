@@ -40,7 +40,7 @@ header {
 .container {
   width: 70%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   display: flex;
   ul {
@@ -50,11 +50,18 @@ header {
     list-style-type: none;
     align-items: center;
     margin-left: auto;
-    font-size: 12px;
+    font-size: 10px;
     li {
       margin-left: 10px;
       margin-right: 10px;
       font-weight: bold;
+    }
+    li:hover {
+      color: #0282f9;
+      text-underline-offset: 28px;
+      text-decoration: underline;
+      text-decoration-color: #0282f9;
+      text-decoration-thickness: 3px;
     }
   }
 

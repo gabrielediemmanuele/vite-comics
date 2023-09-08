@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 .footer-links-cont {
   width: 100%;
-  height: 280px;
+  height: 250px;
   background-image: url(../../public/img/footer-bg.jpg);
 }
 .container {
