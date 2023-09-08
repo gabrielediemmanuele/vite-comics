@@ -1,22 +1,65 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      navlist: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ],
+    };
   },
 };
 </script>
 
 <template>
-  <div class="container">
-    <img src="../../public/img/dc-logo.png" alt="" />
-  </div>
+  <header>
+    <div class="container">
+      <img src="../../public/img/dc-logo.png" alt="" />
+      <ul>
+        <li v-for="list in navlist">{{ list }}</li>
+      </ul>
+    </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/general.scss" as *;
 
+header {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
 .container {
-  @include cont_settings();
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
   background-color: white;
+  display: flex;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: auto;
+    font-size: 12px;
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  }
+
+  img {
+    width: 50px;
+  }
 }
 </style>

@@ -1,15 +1,15 @@
 <script>
 import HeaderNav from "./components/HeaderNav.vue";
-/* import ContentBar from "./components/ContentBar.vue"; */
-/* import ProductsBar from "./components/ProductsBar.vue"; */
+import ContentBar from "./components/ContentBar.vue";
+import ProductsBar from "./components/ProductsBar.vue";
 /* import FooterLinks from "./components/FooterLinks.vue"; */
 /* import FooterSocials from "./components/FooterSocials.vue"; */
 
 export default {
   components: {
     HeaderNav,
-    /* ContentBar, */
-    /*  ProductsBar, */
+    ContentBar,
+    ProductsBar,
     /* FooterLinks, */
     /* FooterSocials, */
   },
@@ -18,6 +18,8 @@ export default {
 
 <template>
   <HeaderNav></HeaderNav>
+  <ContentBar></ContentBar>
+  <ProductsBar></ProductsBar>
 </template>
 
 <style lang="scss">
