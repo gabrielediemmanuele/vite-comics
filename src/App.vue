@@ -2,7 +2,7 @@
 import HeaderNav from "./components/HeaderNav.vue";
 import ContentBar from "./components/ContentBar.vue";
 import ProductsBar from "./components/ProductsBar.vue";
-/* import FooterLinks from "./components/FooterLinks.vue"; */
+import FooterLinks from "./components/FooterLinks.vue";
 /* import FooterSocials from "./components/FooterSocials.vue"; */
 
 export default {
@@ -10,7 +10,7 @@ export default {
     HeaderNav,
     ContentBar,
     ProductsBar,
-    /* FooterLinks, */
+    FooterLinks,
     /* FooterSocials, */
   },
 };
@@ -20,6 +20,7 @@ export default {
   <HeaderNav></HeaderNav>
   <ContentBar></ContentBar>
   <ProductsBar></ProductsBar>
+  <FooterLinks></FooterLinks>
 </template>
 
 <style lang="scss">
