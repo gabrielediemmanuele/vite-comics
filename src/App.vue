@@ -1,23 +1,23 @@
 <script>
-import Header_nav from "./components/Header_nav.vue";
-import Content_bar from "./components/Content_bar.vue";
-import Products_bar from "./components/Products_bar.vue";
-import Footer_Links from "./ccomponents/Footer_Links.vue";
-import Footer_socials from "./ccomponents/Footer_socials.vue";
+import HeaderNav from "./components/HeaderNav.vue";
+/* import ContentBar from "./components/ContentBar.vue"; */
+/* import ProductsBar from "./components/ProductsBar.vue"; */
+/* import FooterLinks from "./components/FooterLinks.vue"; */
+/* import FooterSocials from "./components/FooterSocials.vue"; */
 
 export default {
   components: {
-    Header_nav,
-    Content_bar,
-    Products_bar,
-    Footer_Links,
-    Footer_socials,
+    HeaderNav,
+    /* ContentBar, */
+    /*  ProductsBar, */
+    /* FooterLinks, */
+    /* FooterSocials, */
   },
 };
 </script>
 
 <template>
-  <h1>titolo</h1>
+  <HeaderNav></HeaderNav>
 </template>
 
 <style lang="scss">

@@ -1,6 +1,16 @@
-@use "./partials/variables" as *;
-@use "./partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
 body {
   background-color: rgb(209, 170, 170);
 }
+
+//* mixins
+@mixin cont_settings() {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//*variables
+$head-bg-color: white;
