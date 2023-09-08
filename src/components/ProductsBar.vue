@@ -32,9 +32,9 @@ export default {
 <template>
   <div class="products-bar">
     <div class="container">
-      <div class="img-cont">
-        <img :src="this.products.image" :alt="this.products.title" />
-        <span> {{ this.products.title }}</span>
+      <div class="img-cont" v-for="product in products">
+        <img :src="product.image" :alt="product.title" />
+        <span> {{ product.title }}</span>
       </div>
     </div>
   </div>
@@ -52,11 +52,17 @@ export default {
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   .img-cont {
-    font-size: 25px;
+    display: flex;
+    font-size: 12px;
     color: white;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
     img {
-      width: 20px;
+      width: 35px;
+      margin-right: 5px;
     }
   }
 }
