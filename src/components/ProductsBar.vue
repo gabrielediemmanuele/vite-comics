@@ -61,7 +61,8 @@ export default {
     margin-left: 10px;
     margin-right: 10px;
     img {
-      width: 35px;
+      width: 30px;
+      height: 35px;
       margin-right: 5px;
     }
   }
