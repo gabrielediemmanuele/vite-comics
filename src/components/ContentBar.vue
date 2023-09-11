@@ -1,12 +1,15 @@
 <script>
+//* Import component ComicCard and comicsList from data/comics.js array.
 import ComicCard from "./ComicCard.vue";
 import comicsList from "../data/comics";
 export default {
   data() {
     return {
+      // array comicsList
       comicsList,
     };
   },
+  // props call from ComicCard component
   components: {
     ComicCard,
   },
@@ -18,6 +21,7 @@ export default {
   <div class="content-bar">
     <button class="button-series">CURRENT SERIES</button>
     <div class="comics-cont">
+      <!--*  Component ComicCard  -->
       <ComicCard
         v-for="(comic, index) in comicsList"
         :key="index"

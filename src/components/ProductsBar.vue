@@ -1,4 +1,5 @@
 <script>
+//* Products Array
 export default {
   data() {
     return {
@@ -32,6 +33,7 @@ export default {
 <template>
   <div class="products-bar">
     <div class="container">
+      <!--  Cicle V-for for generate images  -->
       <div class="img-cont" v-for="product in products">
         <img :src="product.image" :alt="product.title" />
         <span> {{ product.title }}</span>

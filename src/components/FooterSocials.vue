@@ -1,3 +1,4 @@
+<!-- Footer-Social Component  -->
 <script>
 export default {
   data() {

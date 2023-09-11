@@ -1,7 +1,9 @@
+<!-- FOOTER LINKS  -->
 <script>
 export default {
   data() {
     return {
+      //* Arrays for footer links
       DcComics: [
         "Characters",
         "Comics",
@@ -44,6 +46,7 @@ export default {
   <div class="footer-links-cont">
     <div class="container">
       <div class="gen-links-cont">
+        <!--  Link cols -->
         <div class="link-col">
           <h4>DC COMICS</h4>
           <span v-for="dccomic in DcComics">{{ dccomic }}</span>
@@ -59,6 +62,7 @@ export default {
           <span v-for="sitelink in SitesLinks">{{ sitelink }}</span>
         </div>
       </div>
+      <!--  Background Logo Container  -->
       <div class="logo-cont"></div>
     </div>
   </div>
@@ -76,11 +80,9 @@ export default {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
   .gen-links-cont {
     width: 50%;
     height: 80%;
-    /* border: 1px solid green; */
     margin: auto 0;
     display: flex;
     align-items: center;
@@ -88,7 +90,6 @@ export default {
     .link-col {
       width: calc(100% / 3);
       height: 80%;
-      /* border: 1px solid rgb(176, 156, 156); */
       display: flex;
       flex-direction: column;
       margin: 0 10px;
@@ -97,6 +98,7 @@ export default {
         color: white;
         font-size: 13px;
       }
+
       span {
         font-size: 8px;
         color: rgb(184, 184, 184);
@@ -105,10 +107,11 @@ export default {
     }
   }
 }
+
+/* Background Logo container  */
 .logo-cont {
   width: 50%;
   height: 100%;
-  /* border: 1px solid green; */
   margin: auto 0;
   background-image: url(../../public/img/dc-logo-bg.png);
   background-size: cover;

@@ -25,7 +25,7 @@ export default {
     <div class="container">
       <img src="../../public/img/dc-logo.png" alt="" />
       <ul>
-        <!--* For Cicle to generate the navlist from the array  -->
+        <!--* Cicle v-for to generate the navlist from the array  -->
         <li v-for="list in navlist">{{ list }}</li>
       </ul>
     </div>
