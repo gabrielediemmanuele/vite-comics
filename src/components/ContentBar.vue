@@ -7,19 +7,24 @@ export default {
 </script>
 
 <template>
+  <div class="jumbotron"></div>
   <div class="content-bar">
-    <div class="container">
-      <span> &rarr; Content goes here... &larr;</span>
-    </div>
+    <div class="comics-cont">bla bla</div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.jumbotron {
+  width: 100%;
+  height: 200px;
+  background-image: url(../../public/img/jumbotron.jpg);
+  background-size: cover;
+}
 .content-bar {
   width: 100%;
   background-color: #1c1c1c;
 }
-.container {
+.comics-cont {
   width: 70%;
   height: 50px;
   margin: 0 auto;
