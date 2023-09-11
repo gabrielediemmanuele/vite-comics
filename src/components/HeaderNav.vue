@@ -1,3 +1,4 @@
+<!--* Array for Navigation Menù -->
 <script>
 export default {
   data() {
@@ -24,6 +25,7 @@ export default {
     <div class="container">
       <img src="../../public/img/dc-logo.png" alt="" />
       <ul>
+        <!--* For Cicle to generate the navlist from the array  -->
         <li v-for="list in navlist">{{ list }}</li>
       </ul>
     </div>
@@ -35,14 +37,15 @@ export default {
 
 header {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: $head_bg_color;
 }
 .container {
   width: 70%;
   margin: 0 auto;
   padding: 10px;
-  background-color: white;
+  background-color: $head_bg_color;
   display: flex;
+
   ul {
     margin: 0;
     padding: 0;
@@ -51,11 +54,13 @@ header {
     align-items: center;
     margin-left: auto;
     font-size: 10px;
+
     li {
       margin-left: 10px;
       margin-right: 10px;
       font-weight: bold;
     }
+
     li:hover {
       color: #0282f9;
       text-underline-offset: 28px;
