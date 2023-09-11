@@ -16,7 +16,7 @@ export default {
 <template>
   <div class="jumbotron"></div>
   <div class="content-bar">
-    <div class="label-series"></div>
+    <button class="button-series">CURRENT SERIES</button>
     <div class="comics-cont">
       <ComicCard
         v-for="(comic, index) in comicsList"
@@ -41,6 +41,25 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  .button-series {
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: #0282f9;
+    color: white;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: -14px;
+    left: 213px;
+    font-weight: bolder;
+    &:hover {
+      background-color: #ffffff;
+      color: #0282f9;
+      transition: 1s;
+    }
+  }
   .load-button {
     width: 150px;
     margin-bottom: 20px;
