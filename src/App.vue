@@ -4,8 +4,14 @@ import ContentBar from "./components/ContentBar.vue";
 import ProductsBar from "./components/ProductsBar.vue";
 import FooterLinks from "./components/FooterLinks.vue";
 import FooterSocials from "./components/FooterSocials.vue";
+import comicsList from "../src/data/comics"
 
 export default {
+  data() {
+    return {
+      comicsList,
+    }
+  }
   components: {
     HeaderNav,
     ContentBar,
