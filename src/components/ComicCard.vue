@@ -26,12 +26,19 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   &:hover {
     background-color: #0282f9;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 500ms;
     padding: 8px;
     border-radius: 5px;
+  }
+  &:hover .price {
+    color: white;
+  }
+  &:hover .type {
+    color: white;
   }
 
   img {
@@ -41,12 +48,6 @@ export default {
   }
   h6 {
     margin: 4px 0 8px 0;
-    color: white;
-  }
-  &:hover .price {
-    color: white;
-  }
-  &:hover .type {
     color: white;
   }
 
