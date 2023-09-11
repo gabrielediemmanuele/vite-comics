@@ -1,10 +1,14 @@
 <script>
-import ComicsCard from "./ComicsCard.vue";
+import ComicCard from "./ComicCard.vue";
+import comicsList from "../data/comics";
 export default {
   data() {
     return {
-      ComicsCard,
+      comicsList,
     };
+  },
+  components: {
+    ComicCard,
   },
 };
 </script>
@@ -14,13 +18,13 @@ export default {
   <div class="content-bar">
     <div class="label-series"></div>
     <div class="comics-cont">
-      <ComicsCard
+      <ComicCard
         v-for="(comic, index) in comicsList"
         :key="index"
         :comic="comic"
-      ></ComicsCard>
+      ></ComicCard>
     </div>
-    <button class="load-more-button"></button>
+    <button class="load-button">LOAD MORE</button>
   </div>
 </template>
 
@@ -34,13 +38,30 @@ export default {
 .content-bar {
   width: 100%;
   background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .load-button {
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: #0282f9;
+    color: white;
+    border: none;
+    padding: 10px;
+    &:hover {
+      background-color: #ffffff;
+      color: #0282f9;
+      transition: 1s;
+    }
+  }
 }
 .comics-cont {
   width: 70%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
