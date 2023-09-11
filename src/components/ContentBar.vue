@@ -1,7 +1,10 @@
 <script>
+import ComicsCard from "./ComicsCard.vue";
 export default {
   data() {
-    return {};
+    return {
+      ComicsCard,
+    };
   },
 };
 </script>
@@ -9,14 +12,22 @@ export default {
 <template>
   <div class="jumbotron"></div>
   <div class="content-bar">
-    <div class="comics-cont">bla bla</div>
+    <div class="label-series"></div>
+    <div class="comics-cont">
+      <ComicsCard
+        v-for="(comic, index) in comicsList"
+        :key="index"
+        :comic="comic"
+      ></ComicsCard>
+    </div>
+    <button class="load-more-button"></button>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .jumbotron {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-image: url(../../public/img/jumbotron.jpg);
   background-size: cover;
 }
@@ -26,14 +37,10 @@ export default {
 }
 .comics-cont {
   width: 70%;
-  height: 50px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   align-items: center;
-  span {
-    font-size: 25px;
-    color: white;
-  }
+  flex-wrap: wrap;
 }
 </style>
